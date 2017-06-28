@@ -22,7 +22,35 @@
   padding-right: 10px;
 }
 
-.DonePage {
+.StartPage {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.DoneButton .DonePageBottom {
+  color: white;
+}
+
+.DonePageTop {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.DonePageBottom h2 {
+  color: black;
+}
+
+
+.other-distraction-box {
+  display: block;
+  margin-top: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 

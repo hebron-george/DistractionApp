@@ -22,7 +22,7 @@ class StartPage extends Component {
 
 	render() {
 		return (
-			<form onSubmit={this.handleSubmit} className="uk-form uk-form-stacked">
+			<form onSubmit={this.handleSubmit} className="uk-form uk-form-stacked StartPage">
 				<div className="uk-form-row">
 					<label className="uk-text-large start-page-task-name">
 						Task Name: 

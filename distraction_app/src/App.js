@@ -25,7 +25,7 @@ class App extends Component {
     const hasStartedTask = this.state.task_in_progress;
 
     return (
-      <div className="App App-header">
+      <div className="App">
         {
           !hasStartedTask ? 
           (<StartPage onTaskStart={this.handleStartTask} />) 
