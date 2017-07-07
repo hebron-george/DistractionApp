@@ -1,1 +1,6 @@
 # DistractionApp
+
+## Tech Stack
+
+- ReactJS
+- 
