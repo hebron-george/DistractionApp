@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import StartPage from './StartPage.js';
-import DonePage from './DonePage.js';
+import StartPage from './components/StartPage.js';
+import DonePage from './components/DonePage.js';
 
 class App extends Component {
   constructor(props) {
@@ -15,6 +15,7 @@ class App extends Component {
 
   handleStartTask(task) {
     this.setState({task_in_progress: true, taskName: task});
+
   }
 
   handleStopTask() {
