@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import StartPage from './components/StartPage.js';
-import DonePage from './components/DonePage.js';
+import StartPage from '../StartPage.js';
+import DonePage from '../DonePage.js';
+import {render} from 'react-dom';
 
 class App extends Component {
   constructor(props) {
@@ -15,7 +16,6 @@ class App extends Component {
 
   handleStartTask(task) {
     this.setState({task_in_progress: true, taskName: task});
-
   }
 
   handleStopTask() {
@@ -27,15 +27,8 @@ class App extends Component {
 
     return (
       <div className="App">
-        {
-          !hasStartedTask ? 
-          (<StartPage onTaskStart={this.handleStartTask} />) 
-          : 
-          (<DonePage taskName={this.state.taskName} onTaskStop={this.handleStopTask} />)
-        }
+          Click count: {this.props.count}
       </div>
     );
   }
 }
-
-export default App;

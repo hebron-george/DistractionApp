@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "short_name": "DistractionApp",
+  "name": "Distraction Counter",
+  "description": "Take the first step to destroying your distractions!",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "logo_small.png",
+    "default_popup": "index.html"
+  },
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

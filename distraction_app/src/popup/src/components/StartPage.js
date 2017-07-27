@@ -16,6 +16,9 @@ class StartPage extends Component {
 
 	handleSubmit(event) {
 		console.log('Starting task: ' + this.state.value + ' at ' + new Date());
+	    chrome.runtime.sendMessage({started_task: this.state.value}, function(response){
+	      console.log("Background page response: " + response);
+	    });
 		this.props.onTaskStart(this.state.value);
 		event.preventDefault();
 	}
